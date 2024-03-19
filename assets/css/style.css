@@ -1,0 +1,76 @@
+.wrap{
+    display: flex;
+    background-color: rgba(86, 254, 86, 0.611);
+    width: 272px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 30px auto 24px;
+    padding: 24px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputBox{
+    display: flex;
+    width: 272px;
+    height: 31px;
+    border-radius: 10px;
+    margin: 30px auto 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.start{
+    display: flex;
+    width: 272px;
+    height: 31px;
+    border-radius: 10px;
+    margin: 6px auto 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.box{
+    display: flex;
+    padding: 100px 160px;
+    margin: 10px auto 30px;
+    border-color: darkgray;
+    border-width: 2px;
+    border-style: dashed;
+    box-sizing: border-box;
+    width: 272px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.text{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+@media screen and (min-width: 384px) {
+    .box{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1068px) {
+    .box{
+        flex-direction: column;
+    }
+}
