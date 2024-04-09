@@ -1,141 +1,231 @@
-:root{
-    --primary: #bdf9df;
-    --primary-houver: #216f32;
-    --bg: #ffffff;
-    --secundary: #dedede;
-    --secundary-houver: #dedede;
-    --gray: #9c9c9c;
-    --border: #333333:
-    --dropzone-border: #f7f1f1;
-    --headline: #111315;
-    --text:  #111315;
-    --primary-text:  #111315;
-    --dropzone-over: var (--secondary);
-}
+
 body{
     font-family: 'Work Sans',sans-serif;
-    background: var (--bg);
-    display: flex;
+    font-size: 15px;
+}
+.form-box{
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    color: var(--text);
 }
 
-*::selection{
-    background: var(--primary);
-    color: var(--btn-text);
-}
-.box{
-    background: var(--primary);
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 30px auto 24px;
+.drop-box{
+    border: 2px solid blue;
+    display: flex;
+    width: 100%;
+    margin: 24px auto 12px;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    max-width: 36rem;
-    width: 100%;
+    align-items: center;
+
+}
+
+.box{
+    background: rgb(133, 252, 179);
+    border-radius: 10px;
+    width: 272px;
+    height: 170px;
+    padding: 5px;
+
 }
 
 .box p{
-    color: var(--primary-houver);
+    color: rgb(53, 118, 0);
+
 }
 
-.dropzone-actions button[type='reset'] {
-    border-radius: 1rem;
-    justify-content: center;
-    margin: 10px auto 24px;
-    max-width: 36rem;
-    width: 100%;
+.comparator-button[type='submit']{
+    background-color: rgb(240, 240, 240);
+    margin: 24px auto 24px;
+    width: 272px;
+    height: 31px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    appearance: none;
     cursor: pointer;
+      
 }
 
-.dropzone-actions button[type='reset']:houver {
-    background: var(--secundary-houver);
-    
-}
-
-.dropzone-box{
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed var(--gray);
+.form-wrapper{
+    border: 2px solid rgb(255, 0, 85);
+    display: flex;
     width: 100%;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.dropzone-box h2{
-    font-size: 1.4rem;
-    margin-bottom: 0.6rem;
-    color: var(--headline);
+.form-container {
+    border: 2px solid rgb(225, 0, 255);
+    width: 100%;
 }
 
-.dropzone-box p{
-    font-size: 1.15rem;
-    color: var(--headline);
+.input-container {
+    border: 2px solid rgb(255, 238, 0);
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .dropzone-area{
-    padding:15%;
-    position: relative;
-    text-align: center;
-    align-items: center;
+    display: flex;
+    border: 2px dashed gray;
+    width: 100%;
+    height: 150px;
+    max-width: 300px;
     flex-direction: column;
-    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
+
+
 }
 
 .dropzone-area [type="file"]{
-    cursor:pointer;
+    border: 2px solid rgb(255, 128, 0);
+    max-width: 300px;
+    width: 100%;
     position: absolute;
     opacity: 0;
     top:0;
     right: 0;
     bottom: 0;
     left: 0;
+    cursor:pointer;
+
+
 }
 
-.dropzone-area .file-upload-icon svg{
-    height: 6rem;
-    max-width: 6rem;
-    margin-bottom: 0.5rem;
-    stroke: var(--headline);
-}
-
-.dropzone-area:haver {
-    background: var(--dropzone-over);
-}
-
-.dropzone-over{
-    border: 2px solid var(--primary);
-    background: var(--dropzone-over);
-}
-
-.dropzone-actions button{
-    flex-grow: 1;
-    min-height: 3rem;
-    font-size: 1.2rem;
+.form-button {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 275px;
+    height: 31px;
+    margin-bottom: 24px;
     border: none;
-    transition: background 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-    .box{
-        flex-direction: row;
-    }
+
+
+
+@media screen and (min-width: 1024px) {
+
+.drop-box{
+    border: 2px solid blue;
+    display: flex;
+    width: min-content;
+    gap: 24px;
+    flex-direction: row;
+    align-items: start;
+
 }
 
-@media screen and (min-width: 1824px) {
-    .box{
-        flex-direction: row;
-    }
+.box{
+    background: rgb(133, 252, 179);
+    border-radius: 10px;
+    width: 480px;
+    height: 109px;
+    padding: 5px;
+
 }
 
-@media screen and (min-width: 1068px) {
-    .box{
-        flex-direction: column;
-    }
+.comparator-button[type='submit']{
+    background-color: rgb(240, 240, 240);
+    width: 480px;
+    height: 31px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    appearance: none;
+    cursor: pointer;
+      
+}
+
+.form-wrapper{
+    border: 2px solid rgb(255, 0, 85);
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(225, 0, 255);
+    width: 100%;
+}
+
+.input-container {
+    border: 2px solid rgb(255, 238, 0);
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dropzone-area{
+    display: flex;
+    border: 2px dashed gray;
+    width: 480px;
+    height: 500px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.dropzone-area [type="file"]{
+    max-width: 300px;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor:pointer;
+}
+
+.form-button {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 189px;
+    height: 31px;
+    margin-bottom: 24px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+  .input-container {
+    width: 50%;
+  }
+
+  form {
+    width: 100%;
+    max-width: 1080px;
+    box-sizing: border-box;
+  }
+
+  .form-wrapper {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+  }
 }
