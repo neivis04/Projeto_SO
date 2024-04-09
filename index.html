@@ -9,46 +9,41 @@
 </head>
   <body>
 
+<div class="form-box">
+<div class="drop-box">
   <div class="box">
-    <p><b>Compare arquivos excel  ou outras planilhas</b></p>
+    <h4>Compare arquivos excel  ou outras planilhas</h4>
     <p>Acha a diferença entre os dois arquivos</p>
     <p>Arquivos suportados: xls/xlsx/xlsm/xlsb, csv, txt, dif, ods.</p>
   </div>
-
-  <div class="dropzone-actions">
-    <button type="reset">Comparar Colunas</button>
-
-  <p style="text-align: center;"><strong>Documento 1</strong></p>
-
-  <form class="dropzone-box">
-    <div class="dropzone-area">
-      <p><strong>Arraste a planilha aqui</strong></p>
-    <p>ou clique na janela</p>
-      <div class="file-upload-icon"></div>
-      <input
-      type="file" required
-      id="upload-file" name="uploaded-file">
-    </div>
-  </form>
-
-  <p style="text-align: center;"><strong>Documento 2</strong></p>
-
-  <form class="dropzone-box">
-    <div class="dropzone-area">
-      <p><strong>Arraste a planilha aqui</strong></p>
-    <p>ou clique na janela</p>
-      <div class="file-upload-icon"></div>
-      <input
-      type="file" required
-      id="upload-file" name="uploaded-file">
-    </div>
-  </form>
-
-  <div class="dropzone-actions">
-    <button type="reset">Encontrar Diferença</button>
-
-  <script src="script.js"></script>
+    <button type="submit" class="comparator-button">Comparar Colunas</button> 
   
-</body>
-</html>
+  </div>
+  <div class="form-wrapper">
+      <form method="post">
+        <div class="form-container">
+          <div class="input-container">
+            <label><strong> Documento 1</strong></label>
+              <div class="dropzone-area">
+                <p><strong>Arraste a planilha aqui</strong></p><p>ou clique na janela</p>
+                <input
+                type="file" required
+                id="upload-file" name="uploaded-file">
+              </div>          
+            </div>
+          
+              <div class="input-container">
+                <label><strong> Documento 2</strong></label >
+                  <div class="dropzone-area">
+                    <p><strong>Arraste a planilha aqui</strong></p><p>ou clique na janela</p>
+                    <input
+                    type="file" required
+                    id="upload-file" name="uploaded-file"/>
+                  </div>          
+                </div>
 
+        <button class="form-button" type="submit">Encontrar Diferença</button>
+      </form>
+    </div>
+  </body>
+</html>
